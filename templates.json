@@ -51,11 +51,38 @@
 				"url": "https://github.com/alouanim/portainer",
 				"stackfile": "nextcloud/docker-compose.yml"
 			},
-			"env": [{
+			"env": [
+				{
 				"name": "MYSQL_DATABASE_PASSWORD",
 				"label": "Database root password",
 				"description": "Password used by the MySQL root user."
-			}]
+				},
+				{
+				"name": "NEXTCLOUD_ADMIN_PASSWORD",
+				"label": "Nextcloud admin password",
+				"description": "Password used by the Nextcloud admin user."
+				},
+								{
+				"name": "NEXTCLOUD_TRUSTED_DOMAINS",
+				"label": "Trusted domain name",
+				"description": "Trusted domain name"
+				},
+				{
+				"name": "COLLAB_DOMAIN",
+				"label": "COLLAB domain name",
+				"description": "the domain name"
+				},
+				{
+				"name": "NEXTCLOUD_PORT",
+				"label": "Nextcloud port",
+				},
+				{
+				"name": "NEXTCLOUD_PATH",
+				"label": "Nextcloud local path",
+				"description": "Nextcloud local path where to save database and data files"
+				}
+			
+			]
 		}
 	]
 }
