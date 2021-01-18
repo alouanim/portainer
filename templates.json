@@ -62,7 +62,7 @@
 				"label": "Nextcloud admin password",
 				"description": "Password used by the Nextcloud admin user."
 				},
-								{
+				{
 				"name": "NEXTCLOUD_TRUSTED_DOMAINS",
 				"label": "Trusted domain name",
 				"description": "Trusted domain name"
@@ -74,14 +74,13 @@
 				},
 				{
 				"name": "NEXTCLOUD_PORT",
-				"label": "Nextcloud port",
+				"label": "Nextcloud port"
 				},
 				{
 				"name": "NEXTCLOUD_PATH",
 				"label": "Nextcloud local path",
 				"description": "Nextcloud local path where to save database and data files"
 				}
-			
 			]
 		}
 	]
