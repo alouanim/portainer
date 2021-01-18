@@ -48,18 +48,8 @@
 			"platform": "linux",
 			"logo": "https://wiki.calculate-linux.org/download_images/original/x7e0ac5156af1ccb2812987ade309819b_g7lTnGD.png.pagespeed.ic.z31ChrrHZ7.png",
 			"repository": {
-<<<<<<< HEAD
 				"url": "https://github.com/alouanim/portainer",
 				"stackfile": "nextcloud/docker-compose.yml"
-=======
-<<<<<<< HEAD
-				"url": "https://github.com/alouanim/portainer",
-				"stackfile": "nextcloud/docker-compose.yml"
-=======
-				"url": "https://github.com/portainer/templates",
-				"stackfile": "stacks/wordpress/docker-compose.yml"
->>>>>>> 56a9aa81dea67fb0eaff6b65aef159528a407b65
->>>>>>> ca30c0cb260fc7edf0214ce5806c1b0dc0bf3e99
 			},
 			"env": [{
 				"name": "MYSQL_DATABASE_PASSWORD",
