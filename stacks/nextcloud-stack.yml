@@ -21,7 +21,7 @@ services:
     links:
       - db
     volumes:
-      - $NEXTCLOUD_PATH/data-html:/var/www/html
+      - ${NEXTCLOUD_PATH}/data-html:/var/www/html
     environment:
       - MYSQL_PASSWORD=${MYSQL_DATABASE_PASSWORD}
       - MYSQL_DATABASE=nextcloud

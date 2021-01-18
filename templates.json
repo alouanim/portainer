@@ -10,16 +10,35 @@
 				"CMS"
 			],
 			"platform": "linux",
-			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
+			"logo": "https://wiki.calculate-linux.org/download_images/original/x7e0ac5156af1ccb2812987ade309819b_g7lTnGD.png.pagespeed.ic.z31ChrrHZ7.png",
 			"repository": {
-				"url": "https://github.com/portainer/templates",
-				"stackfile": "stacks/wordpress/docker-stack.yml"
+				"url": "https://github.com/alouanim/portainer",
+				"stackfile": "stacks/nextcloud-stack.yml"
 			},
 			"env": [{
 				"name": "MYSQL_DATABASE_PASSWORD",
 				"label": "Database root password",
 				"description": "Password used by the MySQL root user."
-			}]
+			},
+			{   "name": "NEXTCLOUD_ADMIN_PASSWORD",
+				"label": "Nextcloud admin password",
+				"description": "Password used to connect admin to nextcloud"
+			},
+			{   "name": "NEXTCLOUD_TRUSTED_DOMAINS",
+				"label": "Nextcloud trusted domain",
+				"description": "Nextcloud domain"
+			},
+			{   "name": "COLLAB_DOMAIN",
+				"label": "Collab domain",
+				"description": "collab domain name"
+			},
+			{   "name": "NEXTCLOUD_PATH",
+				"label": "Local path to save data",
+				"description": "Local path to save data (mysql et data)"
+			}
+			]
 		}
+	}
 	]
+
 }
