@@ -23,14 +23,28 @@
 			}]
 		},
 		{
-			"type": 4,
-			"title": "Wordpress",
+			"title": "Sematext Docker Agent",
+			"type": 2,
 			"categories": [
-				"CMS"
+				"Log Management",
+				"Monitoring"
 			],
-			"description": "Wordpress setup with a MySQL database",
-			"note": "Deploys a Wordpress instance connected to a MySQL database.",
-			"stackfile": "https://raw.githubusercontent.com/portainer/templates/master/stacks/wordpress/edge/docker-stack.yml"
-	  }
+			"description": "Collect logs, metrics and docker events",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/sematext_agent.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/portainer/templates",
+				"stackfile": "stacks/sematext-agent-docker/docker-stack.yml"
+			},
+			"env": [{
+					"name": "LOGSENE_TOKEN",
+					"label": "Logs token"
+				},
+				{
+					"name": "SPM_TOKEN",
+					"label": "SPM monitoring token"
+				}
+			]
+		}
 	]
 }
