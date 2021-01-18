@@ -2,12 +2,17 @@
 	"version": "2",
 	"templates": [
 		{
-		    "type": 4,
-		    "title": "Wordpress",
-		    "description": "Wordpress setup with a MySQL database",
-		    "note": "Deploys a Wordpress instance connected to a MySQL database.",
-		    "stackfile": "https://raw.githubusercontent.com/portainer/templates/master/stacks/wordpress/edge/docker-stack.yml"
-	  }
-		
+		  "type": 2,
+		  "title": "CockroachDB",
+		  "description": "CockroachDB cluster",
+		  "note": "Deploys an insecure CockroachDB cluster, please refer to <a href=\"https://www.cockroachlabs.com/docs/stable/orchestrate-cockroachdb-with-docker-swarm.html\" target=\"_blank\">CockroachDB documentation</a> for production deployments.",
+		  "categories": ["database"],
+		  "platform": "linux",
+		  "logo": "https://cloudinovasi.id/assets/img/logos/cockroachdb.png",
+		  "repository": {
+		    "url": "https://github.com/portainer/templates",
+		    "stackfile": "stacks/cockroachdb/docker-stack.yml"
+		  }
+		}
 	]
 }
