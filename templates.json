@@ -41,7 +41,7 @@
 			"type": 3,
 			"title": "nextcloud",
 			"description": "Nextcloud setup with a MySQL database",
-			"note": "Deploys a Wordpress instance connected to a MySQL database.",
+			"note": "Deploys a Nextcloud instance connected to a MySQL database.",
 			"categories": [
 				"CMS"
 			],
