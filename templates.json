@@ -92,7 +92,7 @@
 				"CMS"
 			],
 			"platform": "linux",
-			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
+			"logo": "https://vpn.macloud.fr/images/logo-text-vertical-grey.png",
 			"repository": {
 				"url": "https://github.com/portainer/templates",
 				"stackfile": "stacks/nginxproxymanager-stack.yml"
