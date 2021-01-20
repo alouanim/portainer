@@ -6,7 +6,7 @@ services:
     restart: always
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
     volumes:
-      - $NEXTCLOUD_PATH/db:/var/lib/mysql
+      - ${NEXTCLOUD_PATH}/db:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_DATABASE_PASSWORD}
       - MYSQL_PASSWORD=${MYSQL_DATABASE_PASSWORD}
@@ -17,7 +17,7 @@ services:
     image: nextcloud
     restart: always
     ports:
-      - 8080:80
+      - ${NEXTCLOUD_PORT}:80
     links:
       - db
     volumes:
