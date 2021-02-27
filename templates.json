@@ -18,6 +18,20 @@
 			}]
 		},
 		{
+			"type": 1,
+			"title": "SSH",
+			"description": "SSH Client",
+			"categories": [
+				"docker"
+			],
+			"platform": "linux",
+			"logo": "https://is5-ssl.mzstatic.com/image/thumb/Purple114/v4/a6/99/ad/a699adda-8ed5-85f0-40ff-f3a4e7517ab5/source/256x256bb.jpg",
+			"image": "jakewalker/webssh:latest",
+			"ports": [
+				"8085:8888/tcp"
+			]
+		},      
+		{
 			"type": 3,
 			"title": "Wordpress",
 			"description": "Wordpress setup with a MySQL database",
