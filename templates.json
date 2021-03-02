@@ -62,6 +62,7 @@
 			},
 			"env": [{
 				"name": "PORT",
+				"label": "Port",
 				"set" : "8080"
 			},
 			{
@@ -78,7 +79,7 @@
 			},
 			{
 				"name": "LOCAL_PATH",
-				"label": "Path to local volume data"
+				"label": "Path to local data"
 			}]
 		}, 
 		{
