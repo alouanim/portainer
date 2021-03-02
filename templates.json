@@ -45,6 +45,37 @@
 			"ports": [
 				"3000/tcp"
 			]
+		},
+		{
+			"type": 1,
+			"title": "Expose-server",
+			"name": "Expose-server",
+			"description": "You can host your own custom Expose server in order to make use of your own domain, when sharing your local sites.",
+			"categories": [
+				"system"
+			],
+			"platform": "linux",
+			"logo": "https://repository-images.githubusercontent.com/255703597/92e86a00-b087-11ea-9bc6-41b6016cc8b9",
+			"repository": {
+				"url": "https://github.com/portainer/templates",
+				"stackfile": "stacks/expose-server/docker-compose.yml"
+			},
+			"env": [{
+				"name": "PORT",
+				"set" : "8080"
+			},
+			{
+				"name": "DOMAIN",
+				"label": "Domaine name"
+			},
+			{
+				"name": "ADMIN_USERNAME",
+				"label": "Admin username"
+			},
+			{
+				"name": "ADMIN_PASSWORD",
+				"label": "Password"
+			}]
 		}, 
 		{
 			"type": 3,
